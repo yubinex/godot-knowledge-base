@@ -41,11 +41,3 @@ The agent inspects the project, updates or creates canonical documentation, main
 - `src/content/docs/evidence/` — self-contained summaries of inspected material; never links to local course files.
 
 Read [`AGENTS.md`](AGENTS.md) before adding or changing documentation.
-
-## Deploy to GitHub Pages
-
-1. Create a GitHub repository named `godot-knowledge-base` and push this project.
-2. In **Settings → Pages**, set the source to **GitHub Actions**.
-3. Push to `main`. The included workflow builds and deploys the site.
-
-The Astro configuration derives the repository path automatically during GitHub Actions builds, so it works for a project site such as `https://<owner>.github.io/godot-knowledge-base/`.
