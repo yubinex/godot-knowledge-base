@@ -1,0 +1,43 @@
+:root {
+	--sl-color-accent-low: #172238;
+	--sl-color-accent: #7aa9f8;
+	--sl-color-accent-high: #dce9ff;
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: #e2edff;
+	--sl-color-accent: #245fb8;
+	--sl-color-accent-high: #14386f;
+}
+
+.sl-link-card {
+	border-color: var(--sl-color-gray-5);
+	transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.sl-link-card:hover {
+	border-color: var(--sl-color-accent);
+	background-color: var(--sl-color-accent-low);
+}
+
+.sl-link-card:focus-within {
+	border-color: var(--sl-color-accent);
+	outline: 2px solid var(--sl-color-accent);
+	outline-offset: 2px;
+}
+
+:not(pre) > code {
+	border-radius: 0.25rem;
+	font-size: 0.9em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+	}
+}

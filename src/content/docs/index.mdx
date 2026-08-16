@@ -1,0 +1,36 @@
+---
+title: Godot Knowledge Base
+description: A connected, practical reference for building games with Godot.
+template: splash
+hero:
+  tagline: Practical Godot knowledge for the moment you get stuck.
+  actions:
+    - text: Start here
+      link: /start-here/
+      icon: right-arrow
+    - text: Browse all topics
+      link: /foundations/
+      icon: open-book
+      variant: minimal
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+Find a concept when you need understanding, or start with a pattern when you need to build a feature. Every pattern links to the knowledge you need first.
+
+## Browse by what you are building
+
+<CardGrid>
+	<LinkCard title="Foundations" description="Shared Godot building blocks: signals, scenes, input, timers, and groups." href="/foundations/" />
+	<LinkCard title="2D development" description="Nodes, physics, movement, and rendering specific to 2D games." href="/2d/" />
+	<LinkCard title="3D development" description="Nodes, physics, movement, cameras, and rendering specific to 3D games." href="/3d/" />
+	<LinkCard title="Reusable patterns" description="Practical solutions with explicit prerequisites and small examples." href="/patterns/" />
+	<LinkCard title="Gameplay systems" description="Connect game state to UI and grow the systems that make a game complete." href="/systems/" />
+</CardGrid>
+
+## Common starting points
+
+- [How do I connect signals?](/foundations/signals/)
+- [How do I make a pickup?](/patterns/collision-driven-collectibles/)
+- [How do I move a 2D object?](/patterns/steering-based-2d-movement/)
+- [How do I spawn items?](/patterns/random-collectible-spawning/)
